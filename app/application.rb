@@ -6,7 +6,7 @@ def call(env)
 
 
 if req.path.match(/items/)
-  #dostuff
+  item_name = req.path.split("/items/").last
 else
 resp.write "Route not found"
 resp.status = 404
