@@ -3,7 +3,7 @@ class Application
 def call(env)
   resp = Rack::Response.new
   req = Rack::Request.new
-end
+#end
 
 if req.path=="/items"
   #dostuff
@@ -12,7 +12,7 @@ resp.write "Route not found"
 resp.status = 404
 end #endif
 
-
+end
 
 
 end
