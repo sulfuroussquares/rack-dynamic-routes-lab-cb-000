@@ -5,7 +5,7 @@ def call(env)
 #  req = Rack::Request.new
 #end
 
-if Rack::Request.new.path=="/items"
+if Rack::Request.path=="/items"
   #dostuff
 else
 resp.write "Route not found"
