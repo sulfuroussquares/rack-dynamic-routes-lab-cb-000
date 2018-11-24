@@ -6,6 +6,9 @@ def call(env)
 end
 
 if req.path=="/items"
+  #dostuff
+else
+end #endif
 
 
 
