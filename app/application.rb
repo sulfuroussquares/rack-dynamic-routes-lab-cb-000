@@ -13,6 +13,7 @@ if req.path.match(/items/)
   else
   item = @@items.find{|x| x.name == item_name}
   resp.write item.price
+end
 else
 resp.write "Route not found"
 resp.status = 404
