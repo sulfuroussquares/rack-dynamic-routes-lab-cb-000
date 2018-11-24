@@ -2,10 +2,10 @@ class Application
 
 def call(env)
   resp = Rack::Response.new
-  #req = Rack::Request.new
+  req = Rack::Request.new
 #end
 
-if resp.path=="/items"
+if req.path=="/items"
   #dostuff
 else
 resp.write "Route not found"
