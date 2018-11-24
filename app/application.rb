@@ -10,6 +10,7 @@ if req.path.match(/items/)
   if @@items.find{|x| x.name == item_name} == nil
     resp.write "No such item"
     resp.status = 400
+  else
   item = @@items.find{|x| x.name == item_name}
   resp.write item.price
 else
