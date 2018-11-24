@@ -8,7 +8,7 @@ end
 if req.path=="/items"
   #dostuff
 else
-  resp.write "Route not found"
+resp.write "Route not found"
 resp.status = 404
 end #endif
 
